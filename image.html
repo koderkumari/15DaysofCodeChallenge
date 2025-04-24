@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #414141;
+        }
+    </style>
+</head>
+<body>
+    <!-- <img src="https://plus.unsplash.com/premium_photo-1672743593121-ddc2fee0e62b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="no image"> -->
+
+    <img src="https://plus.unsplash.com/premium_photo-1672743593121-ddc2fee0e62b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  width="200px" alt="no image">
+
+    <img src="./pic.jpg.jpg" width="300px"  alt="image">
+    <picture>
+        <source />
+    </picture>
+
+    <picture>
+        <source srcset="./pic.jpg.jpg" />
+        <img src="./pic.jpg.jpg" width="200px" alt="">
+    </picture>
+
+    <picture>
+        <source media="(min-width: 650px)" src="./pic.jpg.jpg" />
+        <img src="./pic.jpg.jpg" width="200px" alt="">
+    </picture>
+
+    <picture>
+        <source media="(min-width: 650px)" src="./pic.jpg.jpg" />
+        <source media="(min-width: 460px)" src="./pic.jpg.jpg" />
+        <img src="./pic.jpg.jpg" width="200px" alt="">
+    </picture>
+
+    <!-- an image map generator -->
+    
+    <img src="pic.jpg.jpg" usemap="#image-map">
+    
+    <map name="image-map">
+        <area onclick="one()" target="" alt="" title="" href="" coords="290,44,354,104" shape="circle">
+        <area onclick="two()" target="" alt="" title="" href="" coords="32,68,107,103" shape="rect">
+    </map>
+
+    <script>
+        function one(){
+            alert("you clicked on one")
+
+        }
+        function two(){
+            alert("you clicked on two")
+        }
+    </script>
+
+
+
+
+
+
+</body>
+</html>
